@@ -7,7 +7,7 @@ Proyecto en ionic con local storage
       npm install --save @ionic/storage-angular 
 Por si acaso: 
       npm install --save @ionic-native/core
-Versión nueva: 
+Versión nueva (utilizar esta): 
       npm install @ionic/storage-angular@4.0.0-next.4
       
 3 Agregamos IonicStorageModule al ts de app.module
