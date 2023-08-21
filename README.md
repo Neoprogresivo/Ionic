@@ -4,6 +4,7 @@ Para crear un proyecto en IONIC primero hay que verificar las versiones de los s
 Yo prefiero utilizar GitBash con Visual Studio Code y verificar
 
 node --version
+
 npm --version
 ionic
 
