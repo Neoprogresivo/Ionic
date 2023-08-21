@@ -10,6 +10,7 @@ npm --version
 ionic
 
 Si no está instalado node, se debe instalar (personalemnte prefiero las versiones LTS)
+
 https://nodejs.org/es
 
 Para instalar IONIC
