@@ -1,0 +1,4 @@
+Resumen
+
+Agregar ruta en un botón:
+<ion-button [routerLink]="['/detalle']">Ir al detalle</ion-button>
