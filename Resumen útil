@@ -2,3 +2,9 @@ Resumen
 
 Agregar ruta en un botón:
 <ion-button [routerLink]="['/detalle']">Ir al detalle</ion-button>
+
+Problemas con Angular Material
+Borrar node_modules y package.lock
+En package.json cambiar todos los ^ por ~
+npm i
+ng serve
