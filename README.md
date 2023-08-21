@@ -6,6 +6,7 @@ Yo prefiero utilizar GitBash con Visual Studio Code y verificar
 node --version
 
 npm --version
+
 ionic
 
 Si no está instalado node, se debe instalar (personalemnte prefiero las versiones LTS)
