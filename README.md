@@ -13,6 +13,7 @@ Si no está instalado node, se debe instalar (personalemnte prefiero las version
 https://nodejs.org/es
 
 Para instalar IONIC
+
 npm install -g @ionic/cli
 
 Para crear una aplición con Ionic basta con:
@@ -20,9 +21,11 @@ Para crear una aplición con Ionic basta con:
 ionic start nombreAplicacion tipo
 
 Ejemplo:
+
 ionic start ejemploApp blank
 
 Para correr la aplicación
+
 ionic serve
 
 opcional se agrega -o para abrir en el navegador por defecto.
