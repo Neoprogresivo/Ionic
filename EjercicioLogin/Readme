@@ -1,0 +1,14 @@
+Dependencias de Statusbar
+
+npm i cordova-plugin-statusbar --legacy-peer-deps
+
+npm install @ionic-native/status-bar --legacy-peer-deps
+
+npm i @ionic-native/core --legacy-peer-deps
+
+
+Dependencias de SplashScreen
+
+npm i cordova-plugin-splashscreen --legacy-peer-deps
+
+npm install @ionic-native/splash-screen --legacy-peer-deps
