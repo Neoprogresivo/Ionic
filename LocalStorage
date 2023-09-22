@@ -2,14 +2,15 @@ Proyecto en ionic con local storage
 
 1 Creamos el proyecto en ionic
       ionic start ejemploBDLocalStorage blank
+NOTA: Los siguientes comandos deben ser ejecutados dentro de la carpeta del proyecto (cd ejemploBDLocalStorage)
       
 2 Instalamos los elementos de local storage
       npm install --save @ionic/storage-angular 
-Por si acaso: 
-      npm install --save @ionic-native/core
 Versión nueva (utilizar esta): 
       npm install @ionic/storage-angular@4.0.0-next.4
-      
+Por si acaso (quizá no es necesario): 
+      npm install --save @ionic-native/core
+
 3 Agregamos IonicStorageModule al ts de app.module
       import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
@@ -56,7 +57,8 @@ Versión nueva (utilizar esta):
           const existe= this.agenda.find(c=>c.strNumero===nro);
           if (!existe) {
             this.agenda.unshift({strNombre:nombre,strNumero:nro})
-            this._storage.set('agenda',this.agenda);
+            //Le agrego el signo ? para permitir que pueda ser nulo.
+            this._storage?.set('agenda',this.agenda);
             this.presentToast("Contacto Agregado con Exito!!")
           } else {
             this.presentToast("Error: Contacto YA Existe!!")
@@ -128,9 +130,9 @@ Versión nueva (utilizar esta):
               styleUrls: ['home.page.scss'],
             })
             export class HomePage {
-
-              nombre:string;
-              nro:string;
+            //Les agrego la exclamación para que permita iniciar las variables sin ninguna asignación
+              nombre!:string;
+              nro!:string;
               constructor(public bdlocalservice: BdLocalService) {}
               guardar(){
                 this.bdlocalservice.guardarContacto(this.nombre,this.nro)
@@ -141,5 +143,5 @@ Versión nueva (utilizar esta):
 7.- Revisar local storage (en navegador)
             inspeccionar / Applications / Storage / IndexedDB / ionicstorage /ionickv
 
-8.- Si hay problemas con la declaración de variables:
+8.- Si hay problemas con la declaración de variables (variables nulas):
     		En tsconfig.json modificar a false "strict": true,
