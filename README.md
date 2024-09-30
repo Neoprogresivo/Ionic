@@ -48,9 +48,7 @@ ionic build
 
 npx cap add android
 
-Si no está instalado
-
-  npm install @capacitor/android
+Si no está instalado:  npm install @capacitor/android
 
 npx cap open android
 
