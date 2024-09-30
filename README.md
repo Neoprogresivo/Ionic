@@ -38,7 +38,7 @@ opcional se agrega -o para abrir en el navegador por defecto.
 Comandos utilizados y sugerencias
 
 ----
-#Generar APK
+# Generar APK
 
 npm install (si deseas probar la aplicación ionic serve)
 
