@@ -50,7 +50,7 @@ npx cap add android
 
 Si no está instalado
 
-npm install @capacitor/android
+  npm install @capacitor/android
 
 npx cap open android
 
