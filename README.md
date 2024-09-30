@@ -17,6 +17,10 @@ Para instalar IONIC
 
 npm install -g @ionic/cli
 
+Para actualizar si es que no está la última versión, utilizar
+
+npm install @ionic/angular@latest
+
 Para crear una aplición con Ionic basta con:
 
 ionic start nombreAplicacion tipo
