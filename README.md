@@ -64,3 +64,17 @@ En el caso de error con la ruta del SDK, en este caso se resolvió actualizando 
 Y luego ya se puede generar el apk en la opción Build - Build Bundle(s)/APK(s) - Build APK(s)
 
 El ejecutable queda en la carpeta android /app/build/outputs/apk/androidTest/debug
+
+# En caso de error MODULE_NOT_FOUND
+
+Limpiar el cache de NPM con
+
+npm cache clean --force
+
+Borrar todas las carpetas node_modules de la aplicación
+
+Borrar el archivo package-lock.json de la aplicación
+
+Instalar los paquetes nuevamente usando el comando npm install
+
+Iniciar la aplicación utilizando ionic start
