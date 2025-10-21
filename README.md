@@ -46,13 +46,19 @@ NOTA: Si hay alguna dependencia antigua, agregar --legacy-peer-deps
 
 ionic build
 
+Y si no permite ejecutar scripts, en powershell como administrador ejecutar lo siguiente:
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+Para agregar la plataforma Android:
+
 npx cap add android
 
 Si no está instalado:  npm install @capacitor/android
 
 npx cap open android
 
-Importación y descarga de archivos en android studio
+Importación y descarga de archivos en android studio y si no está el SDK (Descargar desde Android Studio con el SDK Manager)
 
 Si hay instalado algun emulador Play, 
 
